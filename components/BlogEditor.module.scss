@@ -1,0 +1,34 @@
+@import '../app/styles/variables.scss';
+
+.editorContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.editor {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  min-height: 300px;
+  background-color: white;
+  color: #333;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+  }
+}
+
+.selectTrigger {
+  min-width: 200px;
+}
